@@ -4,8 +4,8 @@
   "description": "test project",
   "main": "index.js",
   "scripts": {
-    "prebuild": "cd client && npm ci && npm run build",
-    "start": "cd server && npm ci && node app.js"
+    "prebuild": "cd client && npm ci && npm run build && cd ../",
+    "start": "npm run prebuild && cd server && npm ci && node app.js"
   },
   "repository": {
     "type": "git",
