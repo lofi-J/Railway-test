@@ -6,7 +6,7 @@
   "scripts": {
     "prebuild": "cd client && npm ci && npm run build && cd ../",
     "build": "npm run prebuild && cd server && npm ci && cd ../",
-    "start": "node app.js"
+    "start": "cd server && cd app && node app.js"
   },
   "repository": {
     "type": "git",
