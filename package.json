@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "cd client && npm ci && npm run build && cd ../",
-    "start": "npm run prebuild && cd server && npm ci && node app.js"
+    "build": "npm run prebuild && cd server && npm ci && cd ../",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
